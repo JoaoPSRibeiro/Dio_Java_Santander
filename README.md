@@ -13,4 +13,6 @@ Onde você navegar hoje, pode estar diferente aman
 ## Sugestões
 
 Fique a vontade para dar dicas e sugestões. Como estou aprendendo, toda ajuda é válida!!!!
+
+
 [Linkedin](https://www.linkedin.com/in/joao-paulo-santos-ribeiro)
