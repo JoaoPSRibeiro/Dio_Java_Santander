@@ -1,0 +1,11 @@
+package lanchonete;
+
+public class Cozinheiro {
+	public void adicionarSucoNoBalcao() {
+		System.out.println("Adicionando Suco ao Balcão.");
+	}
+	public void adicionarComboNoBalcao() {
+		adicionarLancheNoBalcao();
+		adicionarSucoNoBalcao();
+	}
+}

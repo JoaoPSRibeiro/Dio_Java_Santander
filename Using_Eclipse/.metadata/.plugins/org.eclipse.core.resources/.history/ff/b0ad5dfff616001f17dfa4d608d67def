@@ -1,0 +1,19 @@
+package lanchonete111.atendimento;
+
+public class Atendente {
+	public void servindoMesa() {
+		System.out.println("Servindo Mesa");
+	}
+	public void pegarLancheCozinha() {
+		System.out.println("Pegando Lanche na Cozinha");
+	}
+	public void receberPagamento() {
+		System.out.println("Recebendo Pagamento");
+	}
+	public void trocarGas() {
+		System.out.println("Atendente Trocando o Gás");
+	}
+	public void pegarPedidoBalcao() {
+		System.out.println("Pedindo pedido no Balcão");
+	}
+}
