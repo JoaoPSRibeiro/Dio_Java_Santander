@@ -7,12 +7,13 @@ public abstract class Conta implements IConta{
 	protected int agencia;
 	protected int numero;
 	protected double saldo;
-	
+	protected Cliente cliente;
 
 	
-	public Conta() {
+	public Conta(Cliente cliente) {
 		this.agencia = AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++; 
+		this.cliente = cliente;
 		// sempre que uma conta for criada, o número dela será sequencial +1
 		
 	}
@@ -20,6 +21,8 @@ public abstract class Conta implements IConta{
 	@Override
 	public void sacar(double valor) {
 		saldo -= valor;
+		
+		
 	}
 	@Override
 	public void depositar(double valor) {
@@ -40,9 +43,10 @@ public abstract class Conta implements IConta{
 		return saldo;
 	}
 	protected void imprimirInfosComuns() {
+		System.out.println(String.format("Titular: %s", this.cliente.getNome())); // duas casas decimais
 		System.out.println(String.format("Agencia: %d", this.agencia));
 		System.out.println(String.format("Numero: %d", this.numero));
-		System.out.println(String.format("Saldo: R$ %.2f", this.saldo)); // duas casas decimais
+		System.out.println(String.format("Saldo: R$ %s", this.saldo)); // duas casas decimais
 	}
 	
 }
