@@ -9,7 +9,4 @@ public class ContaCorrente extends Conta {
 		System.out.println("\n-=-=-=- Extrato Conta Corrente -=-=-=-");
 		super.imprimirInfosComuns();
 	}
-
-	
-	
 }	

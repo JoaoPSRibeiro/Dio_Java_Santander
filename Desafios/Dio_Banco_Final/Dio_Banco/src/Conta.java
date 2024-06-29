@@ -57,6 +57,8 @@ public abstract class Conta implements IConta{
 		System.out.println(String.format("Numero: %d", this.numero));
 		System.out.println(String.format("Saldo: R$ %s", this.saldo)); // duas casas decimais
 	}
+
+	
 	
 }
 /* uma classe abstrata não pode ser instanciada. 
