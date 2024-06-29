@@ -5,12 +5,12 @@ public class Main {
 		JoaoPaulo.setNome("Joao Paulo");
 
 		Conta cc = new ContaCorrente(JoaoPaulo);
-		cc.depositar(01000);
-		cc.sacar(100);
+		cc.depositar(100);
+		cc.sacar(0);
 
 		Conta poupanca = new ContaPoupanca(JoaoPaulo);
-		poupanca.depositar(2);
-		cc.transferir(200, poupanca);
+		poupanca.depositar(0);
+		cc.transferir(0, poupanca);
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
